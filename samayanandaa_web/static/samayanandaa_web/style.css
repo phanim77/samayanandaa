@@ -103,7 +103,7 @@ article {
 /*header*/
 
 header {
-	background: #1c1c1c;
+	background: #841f24;
 	padding: 15px 20px;
 }
 
@@ -168,7 +168,7 @@ a.to_nav:focus {
 #primary_nav li a {
 	display: block;
 	padding: 0 20px;
-	color: #fff;
+	color: #1c1c1c;
 	text-decoration: none;
 	font-weight: bold;
 	text-transform: uppercase;
