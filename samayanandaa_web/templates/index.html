@@ -1,103 +1,467 @@
-<html lang="en">
-<head>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>SAMAYANANDAA</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--css-->
+		{% load static %}
+		<link rel="stylesheet" type="text/css" href="{% static 'samayanandaa_web/assets/css/main.css' %}">
+		<noscript><link rel="stylesheet" href="{% static 'samayanandaa_web/assets/css/noscript.css' %}" /></noscript>
+		
+		<!--<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>-->
+	</head>
+	<body class="is-preload">
 
-	<meta charset="utf-8">
-	<title>Astro Site</title>
-	<meta name="description" content="CSS only mobile first navigation">
-	<meta name="author" content="Samayanandaa">
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-	<!--Mobile specific meta goodness :)-->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa-diamond"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>Samayanandaa</h1>
+								<p>Service to Mankind</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#about_us">About Us</a></li>
+								<li><a href="#natal_horoscope">Natal Horoscope</a></li>
+								<li><a href="#horary">Horary</a></li>
+								<li><a href="#annual_horoscopy">Annual Horoscopy</a></li>
+								<li><a href="#muhurat">Muhurat</a></li>
+								<li><a href="#remedies">Remedies</a></li>
+								<li><a href="#matrimonial_horoscope_matching">Matrimonial Horoscope Matching</a></li>
+								<li><a href="#contact">Contact Us</a></li>
+								<li><a href="#feedback">Feedback</a></li>
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</header>
 
-	<!--google fonts-->
-	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
-	
-	<!--css-->
-	{% load static %}
-	<link rel="stylesheet" type="text/css" href="{% static 'samayanandaa_web/style.css' %}">
-	
-	<!--image-->
-	{% load staticfiles %}
-	<img src="{% static 'samayanandaa_web/photo.png' %}" height="40%" alt="My photo">
-	
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+				<!-- Main -->
+					<div id="main">
+						<!-- About Us -->
+							<article id="about_us">
+								<h2 class="major">About Us</h2>
+								<span class="image main">
+									<!--image-->
+									{% load staticfiles %}
+									<img src="{% static 'samayanandaa_web/images/pic01.jpg' %}" alt="">
+									<!--<img src="images/pic01.jpg" alt="" />-->
+								</span>
+								<p>Samayananda.org( or samayananda.co.in) was started  to cater to the needs of various people coming from various segments of the society with an intention to give the BEST ASTROLOGICAL GUIDANCE ... keeping the present trend of the society having various needs of guidance in the areas of Knowing the Longevity, Health, Profession, Matrimonial Matters, Financial issues, Business, Legal matters concerning various issues, 
+									Some major Hurdles in life in reaching the goals etc... being some among various others personal issues...
+									It is the place where as ONE STOP ... anyone can have the BEST GUIDANCE & REMEDIAL AVENUES....
+									The subject site was promoted by an EMINENT STELLAR ASTROLOGER, who practices KRISHNA MURTHY PADHATI for over 40 years. The various remedies for overcoming the various difficult situations by anyone, based on ones’s Horoscope, will be advised.
+									Mr. GVK RAO, is a STELLAR ASTROLOGER practising the Scientific stellar system known as KRISHNA MURTHY PADHATI, for over 44 years.... Mr. GVK RAO has participated in many National and International summits and presented various papers including the case studies...and many predictions to various individuals having been proved correct, to His credit...
+									Mr. RAO, hails from a Educated and Vedic Brahmin Family, and is a Post Graduate with Post Banking Qualifications and having served in Banking Sector for more than two and half decades, had devoted all His time for the welfare of the society.. His ancestors from His father’s’ side are Great Astrologers and from His Mothers’ side are Great SRIVIDYA UPASAKAS...
+									These two features have been genetically acquired by Mr Rao and He is both, an Astrologer and a SRIVIDYA UPASAKA...
+									He had been relentlessly, without any motives of only monetary gain, had been serving the various needs of the people to give relief from their suffering pain and to their utmost satisfaction....
+									Mr.Rao have had many astounding predictions to His credit and also by indicating various simple remedies, had turned the tables of many.
+									Mr. Rao being a SRIVIDYA UPASAKA, had undertaken the practice of SRI UCHISHTA GANAPATHY, DASA MAHAVIDYAS, SRI LALITHA, SRI RAJASHYAMALA, SRI VARAHI, CHANDI & RUDRA. 
+									Mr. RAO, had been fairly successful in indicating some colours which will enhance the positivity for His clients, and remove the hurdles of the clients based on the Horoscopes...
+									It was Mr.RAO, who based on His experience of more than FOUR DECADES, had come out with few remedies for various problems of which PUNARPHOO is main... which can avert the sudden cancellation of various important events starting from Admissions into schools/ colleges ..to even performance of Marriages and some situations leading to divorces.</p>								
+							</article>
 
-	<!-- Favicons-->
-	<link rel="shortcut icon" href="img/favicon.ico">
+						<!-- Natal Horoscope -->
+							<article id="natal_horoscope">
+								<h2 class="major">Natal Horoscope</h2>
+								<span class="image main">
+									<img src="{% static 'samayanandaa_web/images/pic02.jpg' %}" alt="">
+									<!--<img src="images/pic02.jpg" alt="" />-->
+								</span>
+								<p>DATE, TIME & PLACE OF BIRTH to be given. If the Birth Place is a remote place, then any prominent place nearer to it within 20-25 km can be given with a note.</p>
+								<p>The Date, Time and Place of Marriage, if married, helps us in checking the correctness of the Birth Time... in case of any error, the Birth Time will be rectified.</p>
+							</article>
 
-</head>
-<body id="home">
+						<!-- Horary -->
+							<article id="horary">
+								<h2 class="major">Horary</h2>
+								<span class="image main">
+									<img src="{% static 'samayanandaa_web/images/pic03.jpg' %}" alt="">
+									<!--<img src="images/pic03.jpg" alt="" />-->
+								</span>
+								<p>	Some people do not have any of the birth details and in such a case the consultee can confidently rely on this method wherein, He will be asked to put his Question and
+									also mention a Number between 1 & 249. Based on the number the HORARY HOROSCOPE will be erected and the answer will be given... It is to be noted that the consultees will have to give separate number for each query.
+								</p>
+							</article>
+						<!-- Annual Horoscopy -->
+							<article id="annual_horoscopy">
+								<h2 class="major">Annual Horoscopy</h2>
+								<span class="image main">
+									<img src="{% static 'samayanandaa_web/images/pic03.jpg' %}" alt="">
+									<!--<img src="images/pic03.jpg" alt="" />-->
+								</span>
+								<p>This is the system applicable for those who already have HOROSCOPE from us ... because it is a yearly exercise and we have to draw the horoscope for a particular year and has to be judged vis-a-vis the NATAL HOROSCOPE, based on the current data of the consultee viz.. His current place of stay etc.. The Annual Horoscopy throws much more illuminated light and it has to be judged again in combination with the NATAL HOROSCOPE.</p>
+							</article>							
+						<!-- Muhurat -->
+							<article id="muhurat">
+								<h2 class="major">Muhurat</h2>
+								<span class="image main">
+									<img src="{% static 'samayanandaa_web/images/pic03.jpg' %}" alt="">
+									<!--<img src="images/pic03.jpg" alt="" />-->
+								</span>
+								<p>	This the system of finding and fixing AUSPICIOUS TIME for performing various important activities such as
+									First Feeding of Child, 
+									Tonsuring ceremony,
+									Cradle ceremony,
+									Laying Foundation Stone,
+									Signing the Nominations,
+									Signing various imp. Papers, 
+									Thread Ceremonies,
+									Fixing of Alliances,
+									Marriage,
+									Joining Jobs,
+									Entering into Contracts,
+									Purchase/Sale of Land,
+									Sowing Seeds,
+									Opening of Offices,
+									Construction of Houses,
+									House Warming,
+									Starting of Compromises,
+									Purchase of Vehicles,
+									Taking of Medicines by sick persons, 
+									Hospitalisation, 
+									Ear Boaring Ceremonies,
+									Starting New Ventures, 
+									Digging of Borewells, 
+									Etc....
+									Selectively only few are given above, among various others.
+								</p>
+							</article>	
+						<!-- Remedies -->
+							<article id="remedies">
+								<h2 class="major">Remedies</h2>
+								<span class="image main">
+									<img src="{% static 'samayanandaa_web/images/pic03.jpg' %}" alt="">
+									<!--<img src="images/pic03.jpg" alt="" />-->
+								</span>
+								<p>
+									Generally it is seen that every person encounters some or the other problem during one’s life time starting from Health to Hispitalisation on the one hand and on the other hand some issues like settlement of debts, litigation, non- materialisation of marriages of children, continuous failures in one’s attempts be it in the Education, Jobs, fixation of Alliances for marriages, Love matters, construction of houses or house warming... etc being few given here selectively among various others.
+									At times the consultees will be advised whereupon they have to wear a particular colour code of dress to be used on certain week days where the problems can be overcome with much ease while in certain other issues they may be advised to resort to a particular remedy wherein certain types of God’s/ Mantra may have to be propitiated, viz. BAGALAMUKHI for Legal Litigation, UCHISHTA GANAPATHI for overcoming certain hurdles, DAKSHINAMOORTHY for some other issues ranging from kids Education to Heavy Disastrous Health Situations, CHANDI for Heavy Business Losses and slackness etc...
+									In this Remedial aspect.. Also advised various SHANTIS, if any, on the Birth of New Borns based on their Horoscopes. 
+									In case where the consultees suffer from PUNARPHOO, they experience failures in first attempts in Visa Approvals, Jobs, interview selections, Matrimonial Matters, Business Dealings etc.. (selectively given a few among others )
+									In some cases very simple remedies which are cost-free at times, mitigate the Malefic effects and enhance the positivity. While in some others, to follow some other remedies are suggested..
+									In selective cases, GEMS are advised to be put on the fingers..
+									THIS IS ADVISED ONLY & ONLY WHEN IT BECOMES MANDATORY.</p>
+							</article>		
+						<!-- Remedies -->
+							<article id="matrimonial_horoscope_matching">
+								<h2 class="major">Matrimonial Horoscope Matching</h2>
+								<span class="image main">
+									<img src="{% static 'samayanandaa_web/images/pic03.jpg' %}" alt="">
+									<!--<img src="images/pic03.jpg" alt="" />-->
+								</span>
+								<p>
+								</p>
+							</article>								
+						<!-- Contact -->
+							<article id="contact_us">
+								<h2 class="major">Contact Us</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="4"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								</form>
+							</article>
+						<!-- Feedback -->
+							<article id="feedback">
+								<h2 class="major">Feedback</h2>
+								<span class="image main">
+									<img src="{% static 'samayanandaa_web/images/pic03.jpg' %}" alt="">
+									<!--<img src="images/pic03.jpg" alt="" />-->
+								</span>
+								<p>
+									Feedback list here
+								</p>
+							</article>
+						<!-- Elements -->
+							<article id="elements">
+								<h2 class="major">Elements</h2>
 
-	<div class="wrapper" width="100%">
-	
-		<header>
-			
-			<a class="to_nav" href="#primary_nav">Menu</a>
-		
-		</header>
-		
-		<article>
-		
-			<h2>Date/Time/Location</h2> 
-		
-		</article>
-		
-		<article>
-			
-			<h2>Data Intake Form</h2> 
-			
-			<p>Date/Time/Place of birth</p> 
-			
-			<ul> 
-				<li>Date</li> 
-				<li>Time</li> 
-				<li>Location of birth</li> 
-				<li>Current Location</li> 
-			</ul> 
-		
-		</article>
-		
-		<article>
-			
-			<h2>Payment</h2> 
-			
-			<p>Stripe integration Todo:</p> 
-		
-		</article>
-		
-		<nav id="primary_nav">
-		
-			<ul>
-			
-				<li><a href="about_us.html">About Us</a></li>
-			
-				<li><a href="natal_horoscope.html">Natal Horoscope</a></li>
-			
-				<li><a href="horary.html">Horary</a></li>
-				
-				<li><a href="annual_horoscopy.html">Annual Horoscopy</a></li>
-			
-				<li><a href="muhurat.html">Muhurat</a></li>
-			
-				<li><a href="remedies.html">Remedies</a></li>
-				<li><a href="matrimonial_horoscope_matching.html">Matrimonial Horoscope Matching</a></li>
-				<li><a href="feedback.html">Feedback</a></li>
-			
-				<li class="top"><a href="#home">Top</a></li>
-			
-			</ul>
-		
-		</nav><!--end primary_nav-->
-		
-		<footer>
-		
-			<p>Copyright &copy;2018 Samayanandaa</p>
-		
-		</footer>
-	
-	</div><!--end wrapper-->
-	
-</body>
+								<section>
+									<h3 class="major">Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<h6>Heading Level 6</h6>
+									<hr />
+									<h4>Blockquote</h4>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h4>Preformatted</h4>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+								</section>
+
+								<section>
+									<h3 class="major">Lists</h3>
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3 class="major">Buttons</h3>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon fa-download">Icon</a></li>
+										<li><a href="#" class="button icon fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Form</h3>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy;Samayanandaa</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			{% load staticfiles %}
+			<script src="{% static 'samayanandaa_web/assets/js/jquery.min.js' %}"></script>
+			<script src="{% static 'samayanandaa_web/assets/js/browser.min.js' %}"></script>
+			<script src="{% static 'samayanandaa_web/assets/js/breakpoints.min.js' %}"></script>
+			<script src="{% static 'samayanandaa_web/assets/js/util.js' %}"></script>
+			<script src="{% static 'samayanandaa_web/assets/js/main.js' %}"></script>
+			<!--<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>-->
+
+	</body>
 </html>
