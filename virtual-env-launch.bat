@@ -1,3 +1,3 @@
-virtualenv %HOMEPATH%\eb-virt
+@rem virtualenv %HOMEPATH%\eb-virt
 
 %HOMEPATH%\eb-virt\Scripts\activate
