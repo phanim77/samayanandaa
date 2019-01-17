@@ -33,18 +33,6 @@ def natal_horoscope(request, pagename):
     print (request.POST.get('last_name'))
     print (request.POST.get('date_of_birth'))
     print (request.POST.get('time_of_birth'))
-    #if request.method == 'POST':
-    #   form = NatalHoroscopeForm(request.POST)
-    #    if form.is_valid():
-    #       cd = form.cleaned_data
-    #       con = get_connection('django.core.mail.backends.console.EmailBackend')
-    #        send_mail(cd['subject'], cd['message'], cd.get('email', 'noreply@example.com'), ['m.phani@gmail.com'], connection=con)
-    #        return HttpResponseRedirect('/natal_horoscope?submitted=True')
-    #    else:
-    #        form = NatalHoroscopeForm()
-    #        if 'submitted' in request.GET:
-    #            submitted = True
-    #return render(request, 'natal_horoscope.html', {'form': form, 'page_list': NatalHoroscope.objects.all(), 'submitted': submitted})
     context = {
         'first_name': request.POST.get('first_name'),
         'middle_name': request.POST.get('middle_name'),

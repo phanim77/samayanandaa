@@ -78,7 +78,7 @@
 								</span>
 								<p>DATE, TIME & PLACE OF BIRTH to be given. If the Birth Place is a remote place, then any prominent place nearer to it within 20-25 km can be given with a note.</p>
 								<p>The Date, Time and Place of Marriage, if married, helps us in checking the correctness of the Birth Time... in case of any error, the Birth Time will be rectified.</p>
-								<form id="natal_horoscope_form" method="post" action="/natal_horoscope_confirm/">
+								<form id="natal_horoscope_form" method="post" action="#payment">
 									{% csrf_token %}
 									<div class="fields">
 										<div class="field half">
@@ -124,6 +124,55 @@
 										<li><input type="submit" value="Submit Personal Info" class="primary" /></li>
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
+								</form>
+							</article>
+
+						<!-- Payment -->
+							<article id="payment">
+								<h2 class="major">Payment</h2>
+								<span class="image main">
+									<img src="{% static 'samayanandaa_web/images/pic02.jpg' %}" alt="">
+									<!--<img src="images/pic02.jpg" alt="" />-->
+								</span>
+								<p>Please make payment below.</p>
+								<form id="payment_form" method="post" action="#natal_horoscope_confirm">
+									{% csrf_token %}
+									<div class="fields">
+										<div class="field half">
+											<label for="first_name">Credit Card Number</label>
+											<input type="text" name="cc_num" id="cc_num" value="{{ cc_num }}"/>
+											<span class="helptext">Enter Credit Card.</span>
+										</div>
+										<div class="field half">
+											<label for="middle_name">Expiry Date</label>
+											<input type="text" name="expiry_date" id="expiry_date" value="{{ expiry_date}}"/>
+										</div>										
+										<div class="field half">
+											<label for="last_name">CVV</label>
+											<input type="text" name="cvv" id="cvv" value="{{ cvv }}"/>
+											<span class="helptext">Enter CVV Code.</span>
+										</div>										
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Submit Payment Info" class="primary" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								</form>
+							</article>
+
+						<!-- Natal Horoscope Confirm -->
+							<article id="natal_horoscope_confirm">
+								<h2 class="major">Natal Horoscope Payment</h2>
+								<span class="image main">
+									<img src="{% static 'samayanandaa_web/images/pic02.jpg' %}" alt="">
+									<!--<img src="images/pic02.jpg" alt="" />-->
+								</span>
+								<p>Please make payment below.</p>
+								<form id="natal_horoscope_confirm_form" method="post" action="">
+									{% csrf_token %}
+									<p>
+										All Set. Please wait for guidance
+									</p>
 								</form>
 							</article>
 
