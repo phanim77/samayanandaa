@@ -14,7 +14,17 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.conf.urls import include, url
-
+from samayanandaa_web import views
 urlpatterns = [
-url(r'^', include('samayanandaa_web.urls')),
+    url(
+        regex=r'$', 
+        view=views.index, 
+        name='home'
+    ),
+        url(
+        regex=r'$', 
+        view=views.payment, 
+        name='payment'
+    ),
+    url(r'^', include('samayanandaa_web.urls')),
 ]

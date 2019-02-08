@@ -78,7 +78,7 @@
 								</span>
 								<p>DATE, TIME & PLACE OF BIRTH to be given. If the Birth Place is a remote place, then any prominent place nearer to it within 20-25 km can be given with a note.</p>
 								<p>The Date, Time and Place of Marriage, if married, helps us in checking the correctness of the Birth Time... in case of any error, the Birth Time will be rectified.</p>
-								<form id="natal_horoscope_form" method="post" action="#payment">
+								<form id="natal_horoscope_form" method="post" action="{% url 'home' %}#payment">
 									{% csrf_token %}
 									<div class="fields">
 										<div class="field half">
@@ -135,8 +135,9 @@
 									<!--<img src="images/pic02.jpg" alt="" />-->
 								</span>
 								<p>Please make payment below.</p>
-								<form id="payment_form" method="post" action="#natal_horoscope_confirm">
+								<form id="payment_form" method="post" action="{% url 'payment' %}#natal_horoscope_confirm">
 									{% csrf_token %}
+									{{ first_name }}
 									<div class="fields">
 										<div class="field half">
 											<label for="first_name">Credit Card Number</label>
