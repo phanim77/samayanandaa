@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from samayanandaa_web.forms import NatalHoroscopeForm
-
+from samayanandaa_web.forms import PaymentForm
 from . models import NatalHoroscope
 from django.views.generic import View
 # Create your views here.
