@@ -13,6 +13,11 @@ def index(request):
         print (form.data['first_name'])
         print (form.data['middle_name'])
         print (form.data['last_name'])
+        print (form.data['date_of_birth'])
+        print (form.data['time_of_birth'])
+        print (form.data['place_of_birth'])  
+        print (form.data['current_location'])
+        print (form.data['message'])                
         if form.is_valid():
             first_name = form.cleaned_data['first_name']
             print (first_name)
@@ -20,6 +25,16 @@ def index(request):
             print (middle_name)
             last_name = form.cleaned_data['last_name']
             print (last_name)
+            date_of_birth = form.cleaned_data['date_of_birth']
+            print (date_of_birth)   
+            time_of_birth = form.cleaned_data['time_of_birth']
+            print (time_of_birth)
+            place_of_birth = form.cleaned_data['place_of_birth']
+            print (place_of_birth)    
+            current_location = form.cleaned_data['current_location']
+            print (current_location)  
+            message = form.cleaned_data['message']
+            print (message)             
     return render(request, 'index.html', {
     'form': form_class, 
 })

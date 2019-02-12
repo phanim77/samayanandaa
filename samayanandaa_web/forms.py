@@ -7,9 +7,9 @@ class NatalHoroscopeForm(forms.Form):
 	date_of_birth = forms.DateField(label='Date of Birth')
 	time_of_birth = forms.DateField(label='Time of Birth')
 	place_of_birth = forms.CharField(label='Place of Birth', max_length=80)
-	current_location = forms.CharField(label='current_location', max_length=80)
+	current_location = forms.CharField(label='Current Location', max_length=80)
 	message = forms.CharField(widget=forms.Textarea)
 class PaymentForm(forms.Form):
-	cc_num = forms.CharField()
-	expiry_date = forms.CharField()
-	cvv = forms.CharField()	
+	cc_num = forms.CharField(label='Credit Card Number', max_length=19)
+	expiry_date = forms.CharField(label='Expiry Date', max_length=5)
+	cvv = forms.CharField(label='CVV Code', max_length=4)
